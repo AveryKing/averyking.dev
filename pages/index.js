@@ -5,9 +5,15 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
 
-        <h1 className={styles.title}>
-          Coming Soon...
-        </h1>
+      <>
+          <Head>
+              <title>Avery King</title>
+          </Head>
+          <h1 className={styles.title}>
+              Coming Soon...
+          </h1>
+      </>
+
 
   )
 }
