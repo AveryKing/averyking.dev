@@ -6,19 +6,18 @@ import {useEffect, useState} from 'react';
 export default function Home() {
     const [textState, setTextState] = useState('');
     useEffect(() => {
-        setInterval(() => {
-            const newVal = textState.length < 3 ? textState + '.' : '.';
-            setTextState(newVal)
-        },1000);
-    },[textState,setTextState])
+
+    },textState,setTextState)
   return (
+
       <>
           <Head>
               <title>Avery King</title>
           </Head>
           <h1 className={styles.title}>
-              Coming Soon <span className='dots'> {textState} </span>
+              Coming Soon...
           </h1>
+
       </>
 
 
