@@ -2,14 +2,7 @@
   padding: 0 2rem;
 }
 
-html {
-  background-color: #323232;
-  color:whitesmoke;
-}
-body {
-  background-color:#323232;
-  color:whitesmoke;
-}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
