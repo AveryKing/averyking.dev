@@ -6,6 +6,11 @@ class MyDocument extends Document {
         <Head>
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
           <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+          />
+
+          <link
             rel="icon"
             type="image/png"
             sizes="32x32"

@@ -1,21 +1,21 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
+  title: 'Avery King',
+  author: 'Avery King',
   headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description:
+    "I'm a full-stack software developer based in Chicago. While my favorite tools include JavaScript and C#, I am always excited to pick up new languages, tools, and frameworks.",
   language: 'en-us',
-  theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  theme: 'dark', // system, dark or light
+  siteUrl: 'https://www.averyking.dev',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
+  email: 'averyk0@protonmail.com.com',
+  github: 'https://github.com/AveryKing1',
+  twitter: 'https://twitter.com/averyk1ng',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  linkedin: 'https://www.linkedin.com/in/AveryKing1',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

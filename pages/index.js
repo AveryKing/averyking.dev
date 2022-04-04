@@ -4,10 +4,9 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
-
 import NewsletterForm from '@/components/NewsletterForm'
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 2
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -21,13 +20,30 @@ export default function Home({ posts }) {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
+          <div className="flex items-center">
+            <div className="space-y-6 md:ml-12 md:max-w-md">
+              <div className="flex items-center justify-evenly md:block">
+                <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+                  Avery King
+                </h1>
+                <img
+                  className="w-24 rounded-full object-contain md:hidden"
+                  src="static/images/me.png"
+                />
+              </div>
+              <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+                {siteMetadata.description}
+              </p>
+            </div>
+            <div className="mx-auto">
+              <img
+                className="hidden w-52 rounded-full object-contain md:block "
+                src="static/images/me.png"
+              />
+            </div>
+          </div>
         </div>
+
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
