@@ -32,7 +32,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               width="200px"
               height="350px"
               src="https://portfolio-averyking.vercel.app/image.png"
-              alt="Avery king"
+              alt="Avery king. "
             />
           </div>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
